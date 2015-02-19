@@ -1,7 +1,7 @@
 FROM fayehuang/centos-supervisor
 MAINTAINER FayeHuang
 
-RUN yum -y httpd && yum clean all
+RUN yum install -y httpd && yum clean all
 
 COPY supervisord.conf /etc/supervisord.conf
 
